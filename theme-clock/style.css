@@ -133,3 +133,22 @@ html {
   transition: all 0.5s ease-in;
   font-size: 12px;
 }
+
+#notification {
+  width: 200px;
+  height: 50px;
+  background-color: #d1bebb;
+  color: #000;
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in;
+}
+
+.invisible {
+  opacity: 0;
+}
