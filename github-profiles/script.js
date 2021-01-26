@@ -7,6 +7,7 @@ const main = document.getElementById('main')
 async function getUser(username) {
     try {
         const {data} = await axios(APIURL + username)
+        data.bio = !!data.bio !== false ? data.bio : 'No description' ;
 
         createUserCard(data)
         getRepos(username)
