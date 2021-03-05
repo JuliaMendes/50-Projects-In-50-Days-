@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #516dff;
+  background-color: #01e818;
   color: #fff;
   font-family: 'Press Start 2P', sans-serif;
   height: 100vh;
@@ -25,7 +25,7 @@ h1 {
 .btn {
   border: 0;
   background-color: #fff;
-  color: #516dff;
+  color: #01e818;
   padding: 15px 20px;
   font-family: inherit;
   cursor: pointer;
@@ -77,7 +77,7 @@ h1 {
 
 .choose-insect-btn:hover {
   background-color: #fff;
-  color: #516dff;
+  color: #01e818;
 }
 
 .chosse-insect-btn:active {
@@ -129,7 +129,7 @@ h1 {
 }
 
 .insect {
-  cursor: pointer;
+  cursor: url('test.cur'), auto;
   display: flex;
   align-items: center;
   justify-content: center;
