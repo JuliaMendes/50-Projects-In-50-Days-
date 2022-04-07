@@ -140,26 +140,28 @@ nav a {
 /* for responsive  */
 
 @media (max-width:701px) {
-    .container{
+    .container {
         padding: 20px 10px;
     }
 }
+
 @media (max-width:300px) {
-    .project-wrapper{
+    .project-wrapper {
         padding: 7px 7px;
     }
 }
+
 @media (max-width:285px) {
-    nav a{
-        font-size: 15px;
-    }
-    nav i{
+    nav a {
         font-size: 15px;
     }
 
-    .project-preview{
+    nav i {
+        font-size: 15px;
+    }
+
+    .project-preview {
         width: 200px;
         height: 150px;
     }
 }
-
