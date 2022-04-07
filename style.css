@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* colors  */
+:root {
+    --fade-black: #24292F;
+    --light: #ffffff;
+    --fade-light: #eee;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fade-light);
+    overflow-x: hidden;
+}
+
+/* for scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a1e54;
+    border-radius: 7px;
+}
+
+/* utility class  */
+.container {
+    padding: 20px 50px;
+    width: 100%;
+}
+
+.flex-r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* header section  */
+nav {
+    background-color: var(--fade-black);
+    gap: 0px 10px;
+    height: 50px;
+}
+
+nav i {
+    color: var(--light);
+    font-size: 26px;
+}
+
+nav a {
+    font-size: 20px;
+    color: var(--light);
+}
+
+/* main-wrapper  */
+.main-wrapper {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    gap: 50px 30px;
+    flex-wrap: wrap;
+}
+
+.project-wrapper {
+    border: 1px solid rgba(41, 38, 38, 0.384);
+    padding: 10px 15px;
+    align-items: flex-start;
+    border-radius: 4px;
+    gap: 5px 0px;
+    transition: all 0.2s linear;
+
+}
+
+.project-wrapper:hover {
+    border: 1px solid rgba(87, 15, 182, 0.384);
+    transform: translateY(-2px);
+
+}
+
+.project-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    background-color: var(--light);
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.123);
+}
+
+.project-preview img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.link-wrapper {
+    gap: 0px 20px;
+}
+
+.link-wrapper a i {
+    font-size: 20px;
+}
+
+/* switch between : cards with image and card without images  */
+
+
+/* .project-preview {
+    display: none;
+} */
+
+
+
+/* for responsive  */
+
+@media (max-width:701px) {
+    .container{
+        padding: 20px 10px;
+    }
+}
+@media (max-width:300px) {
+    .project-wrapper{
+        padding: 7px 7px;
+    }
+}
+@media (max-width:285px) {
+    nav a{
+        font-size: 15px;
+    }
+    nav i{
+        font-size: 15px;
+    }
+
+    .project-preview{
+        width: 200px;
+        height: 150px;
+    }
+}
+
